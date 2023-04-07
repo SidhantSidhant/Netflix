@@ -1,0 +1,18 @@
+
+
+.header{
+    padding : 1rem 0;
+    background-color: $color-light-blue;
+    color : $color-primary;
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        a{
+            font-size: 3rem;
+            display : block;
+            padding-top: 1.5rem;
+        }
+    }
+}
+

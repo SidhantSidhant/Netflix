@@ -1,0 +1,25 @@
+body {
+    background-color: $color-lighter-blue;
+
+    .card {
+        height: 400px;
+        background-color: $color-light-blue;
+        color: white;
+
+        img {
+            height: 323px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: row;
+                justify-content: space-around;
+            h3 {
+                width: 80% !important;
+            }
+        }
+
+    }
+}

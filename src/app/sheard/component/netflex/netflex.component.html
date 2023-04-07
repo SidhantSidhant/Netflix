@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 " *ngFor="let arr of netflexarr | search : inputval ">
+            <div class="card mt-5" (click)="sendPath(arr.poster_path)">
+                <figure>
+                    <img src="https://image.tmdb.org/t/p/w1280{{arr.poster_path}}" alt="">
+                    <figcaption>
+                        <h3>Movie Name : {{arr.title}}</h3>
+                        <p #eleRef [ngStyle]="{color : arr.vote_average > 5 ? 'red' : 'blue' }">
+                            {{arr.vote_average}}
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
